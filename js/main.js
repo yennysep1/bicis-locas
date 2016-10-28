@@ -19,7 +19,8 @@ function validateForm(){
 			alert("El campo Nombre sólo permite letras AZ sin espacios");
 			return false;
 		}
-	}suNombre();
+	}
+	suNombre();
 	//VALIDAR APELIIDO
 	function suApellido(){
 		if (apellido.value ===""){
@@ -29,14 +30,19 @@ function validateForm(){
 			alert("El campo Apellido sólo permite letras AZ sin espacios");
 			return false;
 		}
-	}suApellido();
-	//VALIDAR PRIMERA LETRA MAYUSCULA *****MALO***
+	}
+	suApellido();
+	//VALIDAR PRIMERA LETRA MAYUSCULA *
 	function mayusculas(){
-		if (nombre.value!==nombre.value.charAt(0).toUpperCase()){
+		if (nombre.value.charAt(0)!==nombre.value.charAt(0).toUpperCase()){
 			alert("Nombre debe comenzar con mayuscula");
 			return false;
+		}if (apellido.value.charAt(0)!==apellido.value.charAt(0).toUpperCase()){
+			alert("Apellido debe comenzar con mayuscula");
+			return false;
 		}
-	} mayusculas();
+	}
+	mayusculas();
 	//VALIDAR CORREO
 	function correo(){
 		if(mail.value===""){
@@ -46,7 +52,8 @@ function validateForm(){
 			alert('El correo no es valido');
 			return false;
 		}
-	} correo();
+	}
+	correo();
 	//VALIDAR CLAVE
 	function contraseña(){
 		if(clave.value===""){
@@ -56,14 +63,16 @@ function validateForm(){
 			alert('su clave es insegura, debe modificarla')
 			return false;
 		}
-	}contraseña();
+	}
+	contraseña();
 	//VALIDAR OPCIONES DE BICICLETA
 	function bicicleta(){
 		if (bici.value==0){
 			alert("Debe escoger un tipo de bicicleta");
 			return false;
 		}
-	}bicicleta();
+	}
+	bicicleta();
 } 
 
 
