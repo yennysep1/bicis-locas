@@ -55,7 +55,7 @@ function validateForm(){
 	}
 	correo();
 	//VALIDAR CLAVE
-	function contraseña(){
+	function contrasenia(){
 		if(clave.value===""){
 			alert("El campo password es obligatorio")
 			return false;
@@ -64,7 +64,7 @@ function validateForm(){
 			return false;
 		}
 	}
-	contraseña();
+	contrasenia();
 	//VALIDAR OPCIONES DE BICICLETA
 	function bicicleta(){
 		if (bici.value==0){
